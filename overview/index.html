@@ -44,7 +44,7 @@
                 <section>
                     <h1>Cross-platform mobile development</h1>
 
-                    <h3>Quick overview</h3>
+                    <h3>Short overview</h3>
 
                     <p>
                         <small>by <a href="//kozorezal.github.io">Aliaksandr Kazarez</a></small>
@@ -101,38 +101,45 @@
                 </section>
 
                 <section>
-                    <section>
-                        <h2>Cross-platform mobile approaches</h2>
-                        <table>
-                            <tr>
-                                <th>Approach</th>
-                                <th>UI</th>
-                                <th>Application Logic</th>
-                                <th>Hardware</th>
-                            </tr>
-                            <tr>
-                                <td>Hardcore</td>
-                                <td>OpenGL</td>
-                                <td>C, C++</td>
-                                <td>NDK, CoreFoundation</td>
-                            </tr>
-                            <tr>
-                                <td>Partial Reuse</td>
-                                <td>UIKit, Android SDK</td>
-                                <td>JS, C#</td>
-                                <td>Native Plugins, bindings</td>
-                            </tr>
-                            <tr>
-                                <td>Hybrid</td>
-                                <td>HTML5</td>
-                                <td>JS</td>
-                                <td>Native Plugins</td>
-                            </tr>
-                        </table>
-                    </section>
+                    <h2>Mobile development approaches</h2>
+                    <table>
+                        <tr>
+                            <th>Approach</th>
+                            <th>UI</th>
+                            <th>Application Logic</th>
+                            <th>Hardware</th>
+                        </tr>
+                        <tr class="fragment">
+                            <td>Native</td>
+                            <td>UIKit, Android UI</td>
+                            <td>Obj-C Swift, Java</td>
+                            <td>Android SDK, Cocoa Touch</td>
+                        </tr>
+                        <tr class="fragment">
+                            <td>No Reuse</td>
+                            <td>OpenGL</td>
+                            <td>C, C++</td>
+                            <td>NDK, CoreFoundation</td>
+                        </tr>
+                        <tr class="fragment">
+                            <td>Partial Reuse</td>
+                            <td>UIKit, Android UI</td>
+                            <td>JS, C#</td>
+                            <td>Native Plugins, bindings</td>
+                        </tr>
+                        <tr class="fragment">
+                            <td>Hybrid</td>
+                            <td>HTML5</td>
+                            <td>JS</td>
+                            <td>Native Plugins</td>
+                        </tr>
+                    </table>
+                </section>
 
+
+                <section>
                     <section>
-                        <h2>Hardcore</h2>
+                        <h2>No Reuse</h2>
                         <ul>
                             <li><a href="https://qt-project.org">Qt</a></li>
                             <li><a href="http://www.adobe.com/products/air.html">Adobe Air</a></li>
@@ -141,7 +148,12 @@
                             <li>... and many more</li>
                         </ul>
                     </section>
+                    <section>
+                        <!--used for games development and entertainment apps with complex 2d and 3d graphics-->
+                    </section>
+                </section>
 
+                <section>
                     <section>
                         <h2>Partial Reuse</h2>
                         <ul>
@@ -152,18 +164,91 @@
                             <li>... and many more</li>
                         </ul>
                     </section>
+                    <section>
+                        <h2>Xamarin</h2>
+                        <ul>
+                            <li>C#</li>
+                            <li>Mono.Touch, Mono.Droid</li>
+                            <li>Xamarin Forms</li>
+                        </ul>
+                        <p>API coverage 100%</p>
+                    </section>
+                    <section>
+                        <h2>Titanium</h2>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>JSCore, V8</li>
+                            <li>JSRuntime + Proxy</li>
+                            <li>Alloy</li>
+                            <li>NPM</li>
+                        </ul>
+                        <p>API coverage ???</p>
+                    </section>
+                    <section>
+                        <h2>NativeScript</h2>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>JSCore, V8</li>
+                            <li>JSRuntime + Proxy</li>
+                            <li>NPM</li>
+                        </ul>
+                        <p>API coverage 100%</p>
+                    </section>
+                    <section>
+                        <h2>React-native</h2>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>JSCore, V8</li>
+                            <li>JSRuntime + Bridge</li>
+                            <li>Shadow DOM</li>
+                            <li>NPM</li>
+                            <li>Strong Community</li>
+                        </ul>
+                        <p>API coverage ???</p>
+                    </section>
+                </section>
 
+                <section>
                     <section>
                         <h2>Hybrid</h2>
                         <ul>
                             <li><a href="http://cordova.apache.org">Cordova</a></li>
-                            <li><a href="http://ionicframework.com">Ionic</a></li>
-                            <li><a href="http://www.appgyver.com/steroids">Steroids</a></li>
+                            <li><a href="http://ionicframework.com">Ionic</a>, <a href="http://www.appgyver.com/steroids">Steroids</a></li>
+                            <li><a href="http://reapp.io">ReApp</a></li>
+                            <li><a href="http://reapp.io">MobileFirst</a></li>
                             <li><a href="http://phonegap.com">PhoneGap</a></li>
                             <li>... and many more</li>
                         </ul>
                     </section>
-
+                    <section>
+                        <h2>Cordova</h2>
+                        <ul>
+                            <li>HTML + CSS + JavaScript</li>
+                            <li>WKWebView, WebView</li>
+                            <li>JSRuntime + Bridge</li>
+                            <p>API coverage ???</p>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Ionic</h2>
+                        <h2>Steroids</h2>
+                        <ul>
+                            <li>AngularJS</li>
+                            <li>UI Library</li>
+                            <li>ngCordova</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>ReApp</h2>
+                        <ul>
+                            <li>React + Flux</li>
+                            <li>UI Library</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>PhoneGap</h2>
+                        <h2>IBM MobileFirst</h2>
+                    </section>
                 </section>
 
 
